@@ -14,7 +14,7 @@ def save_file(file_name=None):  # Optional argument for file name
         f.write(text_content)
 
 def save_as_file():
-    f = asksaveasfile(mode='w', defaultextension=".txt")
+    f = asksaveasfile(mode='w', defaultextension=".md")
     if f:  # Check if user selected a file
         text_content = text_area.get(0.0, END)
         f.write(text_content)
